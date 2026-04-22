@@ -58,3 +58,18 @@ print("Sesudah Rotasi Kanan (Preorder):")
 cetak_preorder(root) 
 # Output: 20 10 30 (Artinya: 20 sekarang menjadi root, 10 di kirinya, 30 di kanannya)
 print()
+
+# Pembahasan:
+'''
+Kode ini mendemonstrasikan cara menangani tree yang miring ke kiri agar kembali seimbang
+lewat prosedur rotasi kanan. Fungsi rotasi_kanan bekerja dengan menaikkan simpul anak
+kiri (x) menjadi root baru, sementara root lama (y) digeser turun menjadi anak kanannya.
+Jika ada bagian sub-tree (T2), posisinya akan disesuaikan menjadi anak kiri y guna
+menjaga urutan data tetap konsisten.
+
+Pada bagian utama, kita mencoba struktur yang miring (30, 20, 10). Awalnya, cetak Preorder
+menghasilkan 30 20 10 karena posisi 30 berada di puncak. Setelah rotasi dilakukan, posisi
+node berubah menjadi 20 10 30, yang menandakan node 20 kini berada di tengah/puncak
+dengan 10 dan 30 sebagai anaknya. Intinya, kode ini menunjukkan bagaimana rotasi bisa
+mencegah tree menjadi terlalu panjang sebelah sehingga proses akses data tetap efisien.
+'''

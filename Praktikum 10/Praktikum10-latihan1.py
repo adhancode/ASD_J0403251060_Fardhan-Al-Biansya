@@ -86,3 +86,11 @@ if search(root, key):
     print("Data ditemukan")         # Output: Data ditemukan
 else:
     print("Data tidak ditemukan")
+
+# Pembahasan:
+'''
+Kode ini mengimplementasikan siklus hidup dasar sebuah BST: 
+dimulai dari pendefinisian struktur (Class Node), pembangunan struktur (Insert), 
+penelusuran data (Inorder), hingga pengambilan data (Search). Struktur ini 
+sangat krusial dalam ilmu komputer untuk optimasi pencarian data yang besar.
+'''
